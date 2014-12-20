@@ -112,7 +112,7 @@ int drawable com_facebook_top_background 0x7f02002c
 int drawable com_facebook_top_button 0x7f02002d
 int drawable com_facebook_usersettingsfragment_background_gradient 0x7f02002e
 int drawable ic_launcher 0x7f02002f
-int id action_settings 0x7f04002a
+int id action_settings 0x7f04002d
 int id authButton 0x7f040026
 int id bottom 0x7f040006
 int id box_count 0x7f040005
@@ -143,11 +143,11 @@ int id com_facebook_tooltip_bubble_view_top_pointer 0x7f04001f
 int id com_facebook_usersettingsfragment_login_button 0x7f040025
 int id com_facebook_usersettingsfragment_logo_image 0x7f040023
 int id com_facebook_usersettingsfragment_profile_name 0x7f040024
-int id getfriends 0x7f04002c
+int id getfriends 0x7f04002f
 int id inline 0x7f040007
 int id large 0x7f040002
 int id left 0x7f04000a
-int id login 0x7f04002b
+int id login 0x7f04002e
 int id normal 0x7f040001
 int id picker_subtitle 0x7f04001b
 int id right 0x7f04000b
@@ -155,9 +155,12 @@ int id small 0x7f040000
 int id standard 0x7f040003
 int id top 0x7f040008
 int id tvage 0x7f040028
+int id tvbooks 0x7f04002b
 int id tvgender 0x7f040029
+int id tvmovies 0x7f04002c
+int id tvsports 0x7f04002a
 int id userInfoTextView 0x7f040027
-int id wallpost 0x7f04002d
+int id wallpost 0x7f040030
 int layout com_facebook_friendpickerfragment 0x7f030000
 int layout com_facebook_login_activity_layout 0x7f030001
 int layout com_facebook_picker_activity_circle_row 0x7f030002

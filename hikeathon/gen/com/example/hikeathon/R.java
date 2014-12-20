@@ -308,7 +308,7 @@ containing a value of this type.
         public static final int ic_launcher=0x7f02002f;
     }
     public static final class id {
-        public static final int action_settings=0x7f04002a;
+        public static final int action_settings=0x7f04002d;
         public static final int authButton=0x7f040026;
         public static final int bottom=0x7f040006;
         public static final int box_count=0x7f040005;
@@ -339,11 +339,11 @@ containing a value of this type.
         public static final int com_facebook_usersettingsfragment_login_button=0x7f040025;
         public static final int com_facebook_usersettingsfragment_logo_image=0x7f040023;
         public static final int com_facebook_usersettingsfragment_profile_name=0x7f040024;
-        public static final int getfriends=0x7f04002c;
+        public static final int getfriends=0x7f04002f;
         public static final int inline=0x7f040007;
         public static final int large=0x7f040002;
         public static final int left=0x7f04000a;
-        public static final int login=0x7f04002b;
+        public static final int login=0x7f04002e;
         public static final int normal=0x7f040001;
         public static final int picker_subtitle=0x7f04001b;
         public static final int right=0x7f04000b;
@@ -351,9 +351,12 @@ containing a value of this type.
         public static final int standard=0x7f040003;
         public static final int top=0x7f040008;
         public static final int tvage=0x7f040028;
+        public static final int tvbooks=0x7f04002b;
         public static final int tvgender=0x7f040029;
+        public static final int tvmovies=0x7f04002c;
+        public static final int tvsports=0x7f04002a;
         public static final int userInfoTextView=0x7f040027;
-        public static final int wallpost=0x7f04002d;
+        public static final int wallpost=0x7f040030;
     }
     public static final class layout {
         public static final int com_facebook_friendpickerfragment=0x7f030000;
