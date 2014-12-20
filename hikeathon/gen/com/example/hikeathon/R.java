@@ -372,7 +372,6 @@ containing a value of this type.
         public static final int com_facebook_tooltip_bubble=0x7f03000d;
         public static final int com_facebook_usersettingsfragment=0x7f03000e;
         public static final int main=0x7f03000f;
-        public static final int userdata=0x7f030010;
     }
     public static final class menu {
         public static final int main=0x7f090000;

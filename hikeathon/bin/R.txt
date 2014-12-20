@@ -174,7 +174,6 @@ int layout com_facebook_search_bar_layout 0x7f03000c
 int layout com_facebook_tooltip_bubble 0x7f03000d
 int layout com_facebook_usersettingsfragment 0x7f03000e
 int layout main 0x7f03000f
-int layout userdata 0x7f030010
 int menu main 0x7f090000
 int string action_settings 0x7f07001f
 int string app_name 0x7f07001d

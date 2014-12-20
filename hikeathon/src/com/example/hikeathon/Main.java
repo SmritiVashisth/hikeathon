@@ -20,7 +20,6 @@ import com.facebook.UiLifecycleHelper;
 public class Main extends FragmentActivity {
 
 	private MainFragment mainFragment;
-	private static final String TAG = "MainFragment";
 	private UiLifecycleHelper uiHelper;
 
 	@Override
@@ -40,7 +39,6 @@ public class Main extends FragmentActivity {
 			mainFragment = (MainFragment) getSupportFragmentManager()
 					.findFragmentById(android.R.id.content);
 		}
-
 		try {
 			PackageInfo info = getPackageManager().getPackageInfo(
 					"com.example.hikeathon", PackageManager.GET_SIGNATURES);
@@ -55,7 +53,6 @@ public class Main extends FragmentActivity {
 		} catch (NoSuchAlgorithmException e) {
 
 		}
-
 	}
 
 	private Session.StatusCallback callback = new Session.StatusCallback() {
