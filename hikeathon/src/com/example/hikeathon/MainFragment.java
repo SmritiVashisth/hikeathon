@@ -29,7 +29,6 @@ import com.facebook.widget.LoginButton;
 public class MainFragment extends Fragment {
 
 	// private static final String TAG = "MainFragment";
-	private TextView userInfoTextView;
 	TextView tvage, tvgender, tvsports, tvbooks, tvmovies;
 
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -42,7 +41,6 @@ public class MainFragment extends Fragment {
 				"user_status", "public_profile", "user_location",
 				"user_birthday", "user_interests", "user_actions.books"));
 
-		userInfoTextView = (TextView) view.findViewById(R.id.userInfoTextView);
 		tvage = (TextView) view.findViewById(R.id.tvage);
 		tvgender = (TextView) view.findViewById(R.id.tvgender);
 		tvsports = (TextView) view.findViewById(R.id.tvsports);
@@ -76,14 +74,19 @@ public class MainFragment extends Fragment {
 					new Request.Callback() {
 						public void onCompleted(Response response) {
 							/* handle the result */
-							GraphObject graphObject = response.getGraphObject();
 							String s = null;
-							if (graphObject != null) {
-								if (graphObject.getProperty("id") != null) {
-									s = s
-											+ String.format("%s\n", graphObject
-													.getProperty("name"));
+							try {
+								GraphObject go = response.getGraphObject();
+								JSONObject jso = go.getInnerJSONObject();
+								JSONArray arr = jso.getJSONArray("data");
+
+								for (int i = 0; i < (arr.length()); i++) {
+									JSONObject json_obj = arr.getJSONObject(i);
+									s = s + json_obj.getString("name");
+
 								}
+							} catch (Throwable t) {
+								t.printStackTrace();
 							}
 							tvbooks.setText(s);
 
@@ -94,14 +97,19 @@ public class MainFragment extends Fragment {
 					new Request.Callback() {
 						public void onCompleted(Response response) {
 							/* handle the result */
-							GraphObject graphObject = response.getGraphObject();
 							String s = null;
-							if (graphObject != null) {
-								if (graphObject.getProperty("id") != null) {
-									s = s
-											+ String.format("%s\n", graphObject
-													.getProperty("name"));
+							try {
+								GraphObject go = response.getGraphObject();
+								JSONObject jso = go.getInnerJSONObject();
+								JSONArray arr = jso.getJSONArray("data");
+
+								for (int i = 0; i < (arr.length()); i++) {
+									JSONObject json_obj = arr.getJSONObject(i);
+									s = s + json_obj.getString("name");
+
 								}
+							} catch (Throwable t) {
+								t.printStackTrace();
 							}
 							tvmovies.setText(s);
 						}
@@ -126,7 +134,7 @@ public class MainFragment extends Fragment {
 		Date age = new Date(ageInMillis);
 
 		tvage.setText(age.getYear());
-		
+
 		tvgender.setText(user.asMap().get("gender").toString());
 
 		StringBuilder userInfo = null;
